@@ -12,7 +12,7 @@ print("Player data updated. Requesting data...")
 response = requests.get(f'https://marvelrivalsapi.com/api/v1/player/{username}', headers=headers)
 match response.status_code:
     case 200:
-        print("Success")
+        print("200: Success")
     case 403:
         print("Error: Private profile")
     case 404:
